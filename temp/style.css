@@ -1,0 +1,38 @@
+/* Page Styles */
+#logo {border-radius:20px;box-shadow:0px 0px 15px #555;height:90px;background-image:url(logobg.png);font-size:3em;font-family:Georgia, "Times New Roman", Times, serif;font-style:italic;border-width:4px;border-color:#FFFFFF;border-style:solid;padding-top:10px;padding-left:5%;transition:padding-left 1s;}
+#logo:hover {padding-left:90%;}
+.menu { margin:5px;}
+.main {box-shadow:0px 0px 20px 2px rgba(100,100,100,100);font-size:19px;font-family:Papyrus;background-color:#fff;padding:10px;}
+#img {max-height:70%;max-width:100%;box-shadow:0px 0px 15px rgba(100,100,100,100);}
+img {opacity:1;transition:opacity 0.5s;}
+img:hover {opacity:0.4;}
+.body {position:absolute;-webkit-animation:tb 1s;cursor:default;width:98.5%;}
+body {background:url(pagebg.png);} 
+#font {text-shadow: 0px 0px 20px #000;transition:text-shadow 0.2s;}
+#font:hover {text-shadow: 10px 10px 5px #000;}
+#prev {position:fixed;left:0px;bottom:0px;-webkit-transform:rotateY(180deg);}
+#next {position:fixed;right:0px;bottom:0px;}
+#play {height:20px; margin-right:10px;}
+#text_begin {position:fixed; left:0%;top:5%;font-family:"Book Antiqua";font-size:40px;-webkit-animation:txt_begin 13s;}
+#text_end {position:fixed;left:15%;top:30%;font-family:calibri;font-size:5em;-webkit-animation:txt_end 5s;}
+/* animation */ 
+@-webkit-keyframes tb {
+0% {top:-150%;left:0%;-webkit-transform:rotate(90deg);}
+100% {top:0%;left:0%;-webkit-transform:rotate(0deg);}
+                  }
+@-webkit-keyframes te {
+0% {top:0%;left:0%;-webkit-transform:rotate(0deg);}
+100% {top:160%;left:0%;-webkit-transform:rotate(90deg);}
+                   }
+@-webkit-keyframes txt_begin {
+0%{top:100%;}
+25%{top:-10%;}
+75%{top:-10%;}
+100%{top:-150%;}
+                             }
+@-webkit-keyframes txt_end {
+0%{top:100%; left:0%; -webkit-transform:rotate(-45deg);font-size:5em;}
+33%{top:20%; left:70%; -webkit-transform:rotate(45deg);font-size:2em;}
+66%{top:40%; left:-5%; -webkit-transform:rotate(-45deg);font-size:5em;}
+99%{top:30%; left:15%; -webkit-transform:rotate(360deg);font-size:5em;}
+                           }
